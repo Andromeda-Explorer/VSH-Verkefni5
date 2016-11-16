@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Verkefni5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+    <div id="nav-background">
+      <div id="nav-container">
+        <header id="nav-header">
+          <h1><a href="#" id="nav-logo">Harpa Events</a></h1>
+          <div id="nav-menu-button">MENU</div>
+        </header>
+        <nav>
+          <ul class="nav-ul hide-ul">
+            <li><a class="nav-link active-link" href="#w-h1">Home</a></li>
+            <li><a class="nav-link" href="#w-h2">Location</a></li>
+            <li><a class="nav-link" href="#w-h3">Reservation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="title-bg">
+      <h2>Tailoring</h2>
+      <p>History of fashion through the ages</p>
+    </div>
+    <div id="main-content">
+      <article class="main-article">
+        <h2 id="w-h1">Home</h2>
+        <p>
+            "Tailoring: History of fashion through the ages" will be held for the first time in Iceland. See the timetable below.
+        </p>
+
+        <br>
+        <br>
+        
+        <img src="mynd1_3.jpg" srcset="mynd1_2.jpg 1000w, mynd1_3.jpg 2000w" alt="yah">
+        <img src="mynd2_3.jpg" srcset="mynd2_2.jpg 1000w, mynd2_3.jpg 2000w" alt="yah">
+        <img src="mynd3_3.jpg" srcset="mynd3_2.jpg 1000w, mynd3_3.jpg 2000w" alt="yah">
+
+        <br>
+        <br>
+
+        <p>
+            Saturday, December 17th 2016: <br><br>
+
+            18:00: Introduction. The bar will be catoring to the group while some of the most famous taylorers and fashion icons of the industry talk about some of their ideas about the history of fashion as well as take questions from the audience. <br><br>
+
+            19:00: The Runway. Everybody will take their seats and enjoy a diverse runway performance, showing the different fasion trends through the ages. <br><br>
+
+            19:30: The lounge will be open for conversations with fine jazz playing in the background. This will give people a chance to create contacts and get to know the designers and models on a more personal level. <br><br>
+
+            21:00: The Runway II. The designers this year will take a specific era to showcase the fashion from that time. <br><br>
+
+            21:30: Fashion Documentary. The highlight of the event will take place in the biggest hall. Paloero Zatnya the famous designer and historian will premiere his documentary "The Tie and Jacket, and how It transformed the world" which is said to be one of his best works yet. <br><br>
+
+            23:00: Drinks and late night dinner. We will transition to the dining room where a team of world class chefs will prepare an amazing dinner and the band will play a variety of melodies. <br><br>
+
+            00:00 - 01:00: See you next year. The hosts will thank the croud and when everybody has finished their dinner, the night will come to an end. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2 id="w-h2">Location</h2>
+        <div id="map" style="width:50%;height:250px"></div>
+
+        <script>
+          function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+            center: new google.maps.LatLng(64.15, -21.93), 
+            zoom: 14
+            }
+             var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        <p>The event will take place in the convert hall "Harpa". View map for further details.</p>
+
+        <br>
+        <br>
+
+        <h2 id="w-h3">Reservation</h2>
+          
+        <p>
+          To make a reservation please fill out the form belove. The payment will take place at the concert Hall. You will be asked for your name that you filled in. <br><br>
+
+          For a chance to win an Armani suit please answer the following question with either "true" or "false" and your name will be added to a list of possible winners. <br><br>
+
+          Question: True or false. The first fashion magazine was published in Germany in 1586?
+        </p>
+
+
+          <br>
+          <br>
+          
+          
+
+          <form action="index.html" method="post" enctype="text/plain">
+            First Name:<br>
+            <input type="text" name="name" required=""><br>
+            Last Name:<br>
+            <input type="text" name="mail" required=""><br>
+            Number of people:<br>
+            <input type="text" name="mail" required=""><br>
+            Answer:<br>
+            <input type="text" name="comment"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+
+          <br>
+          <br>
+          <br>
+          <br>
+
+      </article>
+    </div>
+  
+    
+  </body>
+  
+</html>
